@@ -42,6 +42,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void btnChangeTxtClick(View view) {
-        this.tvMain.setText("Labas");
+        this.tvMain.setText("Labas pasauli");
     }
 }
