@@ -9,7 +9,8 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+
+        android:id="@+id/tvMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -25,6 +26,7 @@
         android:layout_marginEnd="160dp"
         android:layout_marginBottom="300dp"
         android:text="Button"
+        android:onClick="btnChangeTxtClick"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
