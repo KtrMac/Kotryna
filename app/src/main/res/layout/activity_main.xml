@@ -9,27 +9,43 @@
     tools:context=".MainActivity">
 
     <TextView
-
-        android:id="@+id/tvMain"
+        android:id="@+id/tvResults"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="hello_world"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/editUserInput"
+        android:layout_width="294dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="68dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="txt_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spSelection"
+        android:layout_width="286dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editUserInput" />
+
     <Button
-        android:id="@+id/PakeistiTxt"
+        android:id="@+id/btnCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="300dp"
-        android:text="Button"
-        android:onClick="btnChangeTxtClick"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:visibility="visible" />
+        android:layout_marginTop="8dp"
+        android:onClick="btnCountClick"
+        android:text="btn_count_caption"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spSelection" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
